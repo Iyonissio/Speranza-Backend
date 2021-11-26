@@ -11,6 +11,8 @@ route.register("", CondutorView, basename="condutorview")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #Rotas da API
     path('api/', include(route.urls)),
+    #Rotas da App Ficticia para rodar Back-end
     path('', include('products.urls')),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

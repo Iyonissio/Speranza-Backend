@@ -1,5 +1,4 @@
 from rest_framework import serializers
-
 from .models import Condutor
 
 class CondutorSerializer(serializers.ModelSerializer):

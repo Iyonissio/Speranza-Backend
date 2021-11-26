@@ -10,7 +10,6 @@ class CondutorView(viewsets.ModelViewSet):
     queryset = Condutor.objects.all()
     serializer_class = CondutorSerializer
 
-
 def home(request):
     obj = Viatura.objects.all()
     condutor = Condutor.objects.all()
